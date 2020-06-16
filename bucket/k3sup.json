@@ -1,0 +1,27 @@
+{
+    "homepage": "https://github.com/alexellis/k3sup",
+    "description": "k3sup is a lightweight utility to bootstrap a K3s cluster over SSH",
+    "license": "MIT",
+    "version": "0.9.2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/alexellis/k3sup/releases/download/0.9.2/k3sup.exe",
+            "hash": "c60a4b5e4834f1ef2039eb44099622ae856e1634be2a04a1b1a18f1d51251603"
+        }
+    },
+    "bin": "bin/k3sup.exe",
+    "shortcuts": [
+        [
+            "k3sup.exe",
+            "k3sup"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/alexellis/k3sup/releases/download/$version/k3sup.exe"
+            }
+        }
+    }
+}
